@@ -1,0 +1,14 @@
+name: Merak CI Fixture
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  smoke:
+    name: Fixture smoke
+    runs-on: ubuntu-latest
+    steps:
+      - name: Echo fixture marker
+        run: echo "merak-ci-fixture ok"
